@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background: rgb(211, 211, 211);
+        }
+        #left{
+            width: 15%;
+            height: 1000px;
+            float: left;
+            background: rgb(211, 211, 211);
+            position: relative;
+        }
+        #left-1{
+            width: 5%;
+            height: 970px;
+            float: left;
+            border-right: solid 3px black;
+            background: rgb(211, 211, 211);
+        }
+        .left-table{
+            margin-left: 30%;
+        }
+        .left-table img{
+            width: 55px;
+            height: 55px;
+        }
+        .left-table a{
+            font-size: 23px;
+            text-decoration: none;
+            color: black;
+        }
+        #right{
+            width: 78%;
+            height: 1000px;
+            float: right;
+            background: rgb(211, 211, 211);
+            position: relative;
+        }
+        .right-table{
+
+            margin-left: 10%;
+        }
+        .right-a{
+            font-size: 23px;
+            text-decoration: none;
+            color: black;
+        }
+        .right-table img{
+            width: 250px;
+            height: 250px;
+            border:solid 5px rgb(82, 79, 79);
+        }
+        #header{
+            width: 100%;
+            height: 260px;
+            float: left;
+            background: rgb(211, 211, 211);
+            position: relative;
+        }
+        #header .head{
+       width: 1000px; height: 140px;
+       background: url(images/6.png);
+       background-size: 20% 70%;
+       -moz-background-size:30% 80% ;
+       position: absolute;
+       left:70px;
+       top: 40px;
+       background-repeat: no-repeat;
+   }
+   .pan{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 48px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:60px;
+        top:20px;
+        text-decoration: none;
+   }
+   .img1{
+       width: 100px;
+       height: 100px;
+       position: absolute;
+       left: 400px;
+       top: 30px;
+   }
+   .img2{
+       width: 100px;
+       height: 100px;
+       position: absolute;
+       left: 800px;
+       top: 30px;
+   }
+   .one{
+       font-size: 30px;
+       color: black;
+       text-decoration: none;
+       position: relative;
+       left: 550px;
+       top: 60px;
+   }
+
+   .black_overlay{ 
+            display: none; 
+            position: absolute; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 100%; 
+
+            opacity:.50; 
+            filter: alpha(opacity=88); 
+        } 
+    .white_content { 
+            display: none; 
+            position: absolute; 
+            top: 25%; 
+            left: 25%; 
+            width: 250px; 
+            height: 400px; 
+            padding: 20px; 
+            border: solid 2px beige;  
+            z-index:1002; 
+            overflow: auto; 
+        }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+</style>
+<script type="text/javascript">
+    $(function(){
+    })
+    function openDialog(lightId,fadeId){
+        document.getElementById(lightId).style.display='block';
+        document.getElementById(fadeId).style.display='block'
+    }
+    function closeDialog(lightId,fadeId){
+        document.getElementById(lightId).style.display='none';
+        document.getElementById(fadeId).style.display='none'
+    }
+
+    $(function(){
+    })
+</script>
+</head>
+<body>
+    <div id="header">
+        <div class="head">
+            <a class="pan" href="home.html">PAN</a>
+        </div>
+        <img class="img1" src="images/53.png">
+        <a class="one" href="https://music.163.com/#/user/home?id=497019494">这是一条广告</a>
+        <img class="img2" src="images/54.png">
+    </div>
+    <div id="left">
+        <table class="left-table" border="0px" cellspacing="0">
+            <col width="200px">
+            <col width="100%">
+            <col width="100%">
+            <col width="100%">
+            <col width="100%">
+            <col width="100%">
+            <col width="200px">
+        <tr height="30px" align="left">
+            <td>
+                <img class="hert" src="images/43.png">
+            </td>
+            <td>
+                <a class="a" >我喜欢的歌单</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td class="sousuo" >
+                <img src="images/41.png">
+            </td>
+            <td>
+                <a class="a" >搜索</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td>
+                <img src="images/42.png">
+                
+            </td>
+            <td>
+                <a class="a" >一人之下</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td>
+                <img src="images/42.png">
+            </td>
+            <td>
+                <a class="a" >任然</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td>
+                <img src="images/42.png">
+            </td>
+            <td>
+                <a class="a" >鲸鱼马戏团</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td>
+                <img src="images/42.png">
+            </td>
+            <td>
+                <a class="a" >隔壁老樊</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td>
+                <img src="images/42.png">
+            </td>
+            <td>
+                <a class="a" >动漫</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td>
+                <img src="images/42.png">
+            </td>
+            <td>
+                <a class="a" >被遗忘的</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td>
+                <img src="images/42.png">
+            </td>
+            <td>
+                <a class="a" >花粥</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td>
+                <img src="images/42.png">
+            </td>
+            <td>
+                <a class="a" >run</a>
+            </td>
+        </tr>
+        <tr height="30px" align="left">
+            <td>
+                <img src="images/42.png">
+            </td>
+            <td>
+                <a class="a" >king</a>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div id="left-1"></div>
+    <div id="right">
+        <table class="right-table" border="0px" cellspacing="0" align="center">
+            <col width=400px>
+            <col width=400px>
+            <col width=400px>
+        <tr height="260px" align="center">
+            <td>
+                <img class="pictur" src="images/44.jpg">
+            </td>
+            <td>
+                <img class="pictur" src="images/45.jpg">
+            </td>
+            <td>
+                <img class="pictur" src="images/46.jpg">
+            </td>
+        </tr>
+        <tr height="40px" align="center">
+            <td align="center">
+                <a class="right-a" href = "JavaScript:void(0)" onclick = "openDialog('light','fade')" >一人之下</a>
+                <div id="light" class="white_content">
+                    <table>
+                        <col width="200px">
+                        <tr height="60px" align="center" >
+                            <td>无涯--by辟雪</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>少年·北京--by刘丰</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>听风吟--by西瓜kune</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>幺妹二冯宝宝--by清淡</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>丹歌惊鸿--by坡上树</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>人美路子野--by王梓玉</td>
+                        </tr>
+                    </table> 
+                    <a  href = "javascript:void(0)" onclick = "closeDialog('light','fade')" >点这里关闭本窗口</a>
+                </div> 
+                <div id="fade" class="black_overlay"></div> 
+            </td>
+            <td align="center">
+                <a class="right-a" href = "JavaScript:void(0)" onclick = "openDialog('light-1','fade-1')">任然</a>
+                <div id="light-1" class="white_content">
+                    <table>
+                        <col width="200px">
+                        <tr height="60px" align="center" >
+                            <td>凉城--by任然</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>岁月神偷--by任然</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>你好陌生人--by任然e</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>走不出的回忆--by任然</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>空空如也--by任然</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>外愈--by任然</td>
+                        </tr>
+                    </table> 
+                    <a href = "javascript:void(0)" onclick = "closeDialog('light-1','fade-1')">点这里关闭本窗口</a>
+                </div> 
+                <div id="fade-1" class="black_overlay"></div> 
+            </td>
+            <td align="center">
+                <a class="right-a" href = "JavaScript:void(0)" onclick = "openDialog('light-2','fade-2')">鲸鱼马戏团</a>
+                <div id="light-2" class="white_content">
+                    <table>
+                        <col width="200px">
+                        <tr height="60px" align="center" >
+                            <td>Weightless--by鲸鱼马戏团</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>最后的信--by鲸鱼马戏团</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>有时候--by鲸鱼马戏团</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>回忆如诗--by鲸鱼马戏团</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>落雨--by鲸鱼马戏团</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>冬日之梦--by鲸鱼马戏团</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>风--by鲸鱼马戏团</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>雨街--by鲸鱼马戏团</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>再见地球--by鲸鱼马戏团</td>
+                        </tr>
+                    </table> 
+                    <a href = "javascript:void(0)" onclick = "closeDialog('light-2','fade-2')">点这里关闭本窗口</a>
+                </div> 
+                <div id="fade-2" class="black_overlay"></div>
+        </tr>
+        <tr height="260px" align="center">
+            <td>
+                <img class="pictur" src="images/47.jpg">
+            </td>
+            <td>
+                <img class="pictur" src="images/48.jpg">
+            </td>
+            <td>
+                <img class="pictur" src="images/49.jpg">
+            </td>
+        </tr>
+        <tr height="40px" align="center">
+            <td align="center">
+                <a class="right-a" href = "JavaScript:void(0)" onclick = "openDialog('light-3','fade-3')"> 隔壁老樊</a>
+                <div id="light-3" class="white_content">
+                    <table>
+                        <col width="200px">
+                        <tr height="60px" align="center" >
+                            <td>世本常态--by隔壁老樊</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>山海--by隔壁老樊</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>姑娘--by隔壁老樊</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>我曾--by隔壁老樊</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>多想在平庸的世界拥抱你--by隔壁老樊</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>姬和不如--by隔壁老樊</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>关于孤独我想说的话--by隔壁老樊</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>你的姑娘--by隔壁老樊</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>再见地球--by隔壁老樊</td>
+                        </tr>
+                    </table> 
+                    <a href = "javascript:void(0)" onclick = "closeDialog('light-3','fade-3')">点这里关闭本窗口</a>
+                </div> 
+                <div id="fade-3" class="black_overlay"></div>
+            </td>
+            <td align="center">
+                <a class="right-a" href = "JavaScript:void(0)" onclick = "openDialog('light-4','fade-4')">动漫</a>
+                <div id="light-4" class="white_content">
+                    <table>
+                        <col width="200px">
+                        <tr height="60px" align="center" >
+                            <td>Ref:rain--byAimer</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>打上花火--by米津玄师</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>大鱼--by周深</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>One more time--by山靖</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>前前世世--byRADWIMPS</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>魑魅魍魉--by茶理理</td>
+                        </tr>
+                        
+                    </table> 
+                    <a href = "javascript:void(0)" onclick = "closeDialog('light-4','fade-4')">点这里关闭本窗口</a>
+                </div> 
+                <div id="fade-4" class="black_overlay"></div>
+            </td>
+            <td align="center">
+                <a class="right-a" href = "JavaScript:void(0)" onclick = "openDialog('light-5','fade-5')">被遗忘的</a>
+                <div id="light-5" class="white_content">
+                    <table>
+                        <col width="200px">
+                        <tr height="60px" align="center" >
+                            <td>麻雀--by李荣浩</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>过客--by周思涵</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>那女孩对我说--by戴雨彤</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>你的答案--by啊沉</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>围城--by陈响</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>嚣张--byEn</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>生而为人--by尚士达</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>公子向北走--by李春花</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>相见恨晚--by彭佳慧</td>
+                        </tr>
+                    </table> 
+                    <a href = "javascript:void(0)" onclick = "closeDialog('light-5','fade-5')">点这里关闭本窗口</a>
+                </div> 
+                <div id="fade-5" class="black_overlay"></div>
+            </td>
+        </tr>
+        <tr height="260px" align="center">
+            <td>
+                <img class="pictur" src="images/50.jpg">
+            </td>
+            <td>
+                <img class="pictur" src="images/51.jpg">
+            </td>
+            <td>
+                <img class="pictur" src="images/52.jpg">
+            </td>
+        </tr>
+        <tr height="40px" align="center">
+            <td align="center">
+                <a class="right-a" href = "JavaScript:void(0)" onclick = "openDialog('light-6','fade-6')">花粥</a>
+                <div id="light-6" class="white_content">
+                    <table>
+                        <col width="200px">
+                        <tr height="60px" align="center" >
+                            <td>麻雀--by李荣浩</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>过客--by周思涵</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>那女孩对我说--by戴雨彤</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>你的答案--by啊沉</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>围城--by陈响</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>嚣张--byEn</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>生而为人--by尚士达</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>公子向北走--by李春花</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>相见恨晚--by彭佳慧</td>
+                        </tr>
+                    </table> 
+                    <a href = "javascript:void(0)" onclick = "closeDialog('light-6','fade-6')">点这里关闭本窗口</a>
+                </div> 
+                <div id="fade-6" class="black_overlay"></div>
+            </td>
+            <td align="center">
+                <a class="right-a" href = "JavaScript:void(0)" onclick = "openDialog('light-7','fade-7')">run</a>
+                <div id="light-7" class="white_content">
+                    <table>
+                        <col width="200px">
+                        <tr height="60px" align="center" >
+                            <td>麻雀--by李荣浩</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>过客--by周思涵</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>那女孩对我说--by戴雨彤</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>你的答案--by啊沉</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>围城--by陈响</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>嚣张--byEn</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>生而为人--by尚士达</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>公子向北走--by李春花</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>相见恨晚--by彭佳慧</td>
+                        </tr>
+                    </table> 
+                    <a href = "javascript:void(0)" onclick = "closeDialog('light-7','fade-7')">点这里关闭本窗口</a>
+                </div> 
+                <div id="fade-7" class="black_overlay"></div>
+            </td>
+            <td align="center">
+                <a class="right-a" href = "JavaScript:void(0)" onclick = "openDialog('light-8','fade-8')">king</a>
+                <div id="light-8" class="white_content">
+                    <table>
+                        <col width="200px">
+                        <tr height="60px" align="center" >
+                            <td>麻雀--by李荣浩</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>过客--by周思涵</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>那女孩对我说--by戴雨彤</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>你的答案--by啊沉</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>围城--by陈响</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>嚣张--byEn</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>生而为人--by尚士达</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>公子向北走--by李春花</td>
+                        </tr>
+                        <tr height="60px" align="center">
+                            <td>相见恨晚--by彭佳慧</td>
+                        </tr>
+                    </table> 
+                    <a href = "javascript:void(0)" onclick = "closeDialog('light-8','fade-8')">点这里关闭本窗口</a>
+                </div> 
+                <div id="fade-8" class="black_overlay"></div>
+            </td>
+        </tr>
+        </table>
+    </div>
+    
+</body>
+</html> 

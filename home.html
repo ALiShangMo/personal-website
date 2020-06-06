@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人网页</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+            background: rgb(250, 246, 230);
+        }
+    #header{
+        width: 1200px;
+        height: 140px;
+        margin: auto;
+        
+        position: relative;
+    }
+    #header .head{
+       width: 1000px; height: 140px;
+       background: url(images/6.png);
+       background-size: 20% 70%;
+       -moz-background-size:30% 80% ;
+       position: absolute;
+       left:70px;
+       top: 20px;
+       background-repeat: no-repeat;
+   }
+   .pan{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 48px;
+        font-weight: 400;
+        font-style: italic;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:60px;
+        top:20px;
+        text-decoration: none;
+   }
+   #banner{
+       width: 1200px;
+       height:550px;
+       background:rgb(250, 246, 230);
+       margin: auto;
+       position: relative;
+   }
+   .banner_left{
+       width: 400px;
+       height: 500px;
+       background:black;
+       background: url(images/4.png);
+       background-size: 100% 100%;
+       -moz-background-size:100% 100% ;
+       position: absolute;
+       left:150px;
+       float: left;
+       }
+   .banner_mid{
+       width: 400px;
+       height: 500px;
+       background:whitesmoke;
+       float: left;
+       background: url(images/2.png);
+       background-size: 100% 100%;
+       -moz-background-size:100% 100% ;
+       position: absolute;
+       left:350px;
+   }
+   .banner_right{
+       width: 400px;
+       height: 500px;
+       background: rgb(250, 246, 230);
+       float: left;
+       background: url(images/5.png);
+       background-size: 100% 100%;
+       -moz-background-size:100% 100% ;
+       position: absolute;
+       left:550px;
+   }
+   .head_down{
+       width: 1000px; height: 120px;
+       background: rgb(243, 238, 211);
+       background: url(images/7.png);
+       background-size: 90% 60%;
+       -moz-background-size:30% 100% ;
+       background-repeat: no-repeat;
+       position: absolute;
+       left:100px;
+       top:480px;
+   }
+   a.creative{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 48px;
+        font-weight: 400;
+        color: rgb(156, 163, 162);
+        text-decoration: none;
+        position: absolute;
+        left:180px;
+        top:10px;
+   }
+   #middle{
+       width: 1200px;
+       height: 440px;
+       margin: auto; 
+       background: rgb(250, 246, 230);
+       position: relative;
+   }
+   .name{
+       font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 62px;
+        font-weight: 800;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        position: absolute;
+        left: 280px;
+        top: 25px;
+   }
+   .about-me{
+        font-family:华文新魏;
+        font-size: 46px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        position: absolute;
+        left: 280px;
+        top: 120px;
+   }
+   .contact a{
+       background: url(images/13.png);
+       background-size: 50% 80%;
+       width: 260px;
+       height: 160px;
+       position: absolute;
+       background-repeat: no-repeat;
+       position: absolute;
+       left:100px ;
+       top: 330px;
+       cursor:hand;
+   }
+   .netease a{
+       background: url(images/16.png);
+       background-size: 50% 80%;
+       width: 260px;
+       height: 160px;
+       position: absolute;
+       background-repeat: no-repeat;
+       position: absolute;
+       left:200px ;
+       top: 330px;
+       cursor:hand;
+   }
+   .weibo a{
+       background: url(images/15.png);
+       background-size: 50% 80%;
+       width: 260px;
+       height: 160px;
+       background-repeat: no-repeat;
+       position: absolute;
+       left:300px ;
+       top: 330px;
+       cursor:hand;
+   }
+   #line{
+       width: 1200px; height: 50px;
+       background: rgb(250, 246, 230);
+       margin: auto; 
+       position: relative;
+   }
+   .line_sline{
+       width: 1100px; height: 120px;
+       background: url(images/7.png);
+       background-size: 80% 15%;
+       -moz-background-size:30% 100% ;
+       background-repeat: no-repeat;
+       position: absolute;
+       left: 103px;
+       top: 5px;
+   }
+   #title{
+       width: 1200px; height: 100px;
+       background: rgb(250, 246, 230);
+       margin: auto; 
+       position: relative;
+   }
+   .title-pen{
+       width: 750px;
+       height: 160px;
+       background: url(images/8.png);
+       background-size: 12% 70%;
+       -moz-background-size:30% 100% ;
+       background-repeat: no-repeat;
+       position: absolute;
+       left: 90px;
+   }
+   .title-text{
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-size: 36px;
+       color: black;
+       position: absolute;
+       left: 180px;
+       top: 45px;
+   }
+   #case{
+       width: 1200px;
+       height: 1000px;
+       margin: auto;
+       background: rgb(250, 246, 230);
+       position: relative;
+   }
+   #case .item-1{
+       width: 950px;
+       height: 200px;
+       margin: auto;
+       overflow: auto;
+   }
+   img.trip_pictur{
+       margin-top: 22px;
+       width: 130px;
+       height: 150px;
+       border:solid 5px rgb(82, 79, 79);
+   }
+   .trip_writer{
+       font-family: 华文行楷;
+       font-size: 56px;
+       color:rgb(156, 163, 162) ;
+       text-decoration: none;
+       position: absolute;
+       left: 500px;
+       top: 20px;
+   }
+   .trip_writer_english{
+       font-family: 华文行楷;
+       font-size: 56px;
+       color:rgb(156, 163, 162) ;
+       text-decoration: none;
+       position: absolute;
+       left: 450px;
+       top: 100px;
+   }
+   #case .item-2{
+       width: 950px;
+       height: 200px;
+       margin: auto;
+       overflow: auto;
+   }
+   img.read_pictur{
+       margin-top: 22px;
+       width: 130px;
+       height: 150px;
+       border:solid 5px rgb(82, 79, 79);
+   }
+   .read_writer{
+       font-family: 华文行楷;
+       font-size: 56px;
+       color:rgb(156, 163, 162) ;
+       text-decoration: none;
+       position: absolute;
+       left: 500px;
+       top: 220px;
+   }
+   .read_writer_english{
+       font-family: 华文行楷;
+       font-size: 56px;
+       color:rgb(156, 163, 162) ;
+       text-decoration: none;
+       position: absolute;
+       left: 450px;
+       top: 300px;
+   }
+   #case .item-3{
+       width: 950px;
+       height: 200px;
+       margin: auto;
+       overflow: auto;
+   }
+   img.catoon_pictur{
+       margin-top: 22px;
+       width: 130px;
+       height: 150px;
+       border:solid 5px rgb(82, 79, 79);
+   }
+   .catoon_writer{
+       font-family: 华文行楷;
+       font-size: 56px;
+       color:rgb(156, 163, 162) ;
+       text-decoration: none;
+       position: absolute;
+       left: 500px;
+       top: 420px;
+   }
+   .catoon_writer_english{
+       font-family: 华文行楷;
+       font-size: 56px;
+       color:rgb(156, 163, 162) ;
+       text-decoration: none;
+       position: absolute;
+       left: 430px;
+       top: 500px;
+   }
+   #case .item-4{
+       width: 950px;
+       height: 200px;
+       margin: auto;
+       overflow: auto;
+   }
+   img.music_pictur{
+       margin-top: 22px;
+       width: 130px;
+       height: 150px;
+       border:solid 5px rgb(82, 79, 79);
+   }
+   .music_writer{
+       font-family: 华文行楷;
+       font-size: 56px;
+       color:rgb(156, 163, 162) ;
+       text-decoration: none;
+       position: absolute;
+       left: 500px;
+       top: 620px;
+   }
+   .music_writer_english{
+       font-family: 华文行楷;
+       font-size: 56px;
+       color:rgb(156, 163, 162) ;
+       text-decoration: none;
+       position: absolute;
+       left: 420px;
+       top: 700px;
+   }
+    </style>
+</head>
+<body>
+    <div id="header"> 
+          <div class="head">
+                <a class="pan" href="home.html">PAN</a>
+          </div>
+     </div>
+     <div id="banner">
+            <div class="banner_left" >
+                <div class="banner_left_one"></div>
+            </div>
+            
+            <div class="banner_right"></div>
+            <div class="banner_mid"></div>
+            <div class="head_down">
+                <a class="creative">CREATIVE&nbsp;AT&nbsp;HEART</a>
+            </div>
+        </div>
+     <div id=middle>
+                <p class="name">PAN&nbsp;JIAO&nbsp;JIAO</p>
+                <p class="about-me">
+                    一位初入编程届的小白</br>
+                    就读于天津软件大学</br>
+                    仅以此简单记录生活</br>
+                    业务1908班</br>
+                </p>
+                <div class="contact">
+                    <a href="qq.html" ></a>
+                </div>
+                <div class="netease">
+                    <a href="https://music.163.com/#/user/home?id=497019494"></a>
+                </div>
+                <div class="weibo">
+                    <a href="https://weibo.com/5888947005/profile?rightmod=1&wvr=6&mod=personinfo"></a>
+                </div>
+     </div>
+     <div id="line">
+         <div class="line_sline"></div>
+     </div>
+     <div id="title">
+         <div class="title-pen"></div>
+            <p class="title-text"> SOME THING ABOUT ME</p>
+     </div>
+     <div id="case">
+            <div class="item-1">
+                <img class="trip_pictur" src="images/9.jpg">
+                <a class="trip_writer" href="trip.html">关于旅行</a>
+                <a class="trip_writer_english" href="trip.html">something about trip</a>
+            </div>
+            <div class="item-2">
+                    <img class="read_pictur" src="images/10.jpg">
+                    <a class="read_writer" href="read.html">关于阅读</a>
+                    <a class="read_writer_english" href="read.html">something about read</a>
+            </div>
+            <div class="item-3">
+                    <img class="catoon_pictur" src="images/淮竹.jpg">
+                    <a class="catoon_writer" href="movie.html">关于电影</a>
+                    <a class="catoon_writer_english" href="movie.html">something about movies</a>
+            </div>
+            <div class="item-4">
+                    <img class="music_pictur" src="images/39.jpg">
+                    <a class="music_writer" href="L.html">关于音乐</a>
+                    <a class="music_writer_english" href="L.html">something about music</a>
+            </div>
+</div>
+</body>
+</html>

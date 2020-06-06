@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trip</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        #all{
+        width: 100%;
+        height: 4830px;
+        background: rgb(250, 246, 230);
+        }
+    #left{
+        width: 45%;
+        height: 500px;
+        margin:auto;
+        float: left;
+        position: relative;
+
+    }
+    .left_top{
+        width: 700px;height: 100px;
+       background: url(images/6.png);
+       background-size: 20% 70%;
+       -moz-background-size:30% 80% ;
+       position: fixed;
+       left:13.2%;
+       top: 40px;
+       background-repeat: no-repeat;
+
+    }
+    a.pan{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 42px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:5%;
+        top:11px;
+        text-decoration: none;
+   }
+   .left_mid{
+       width: 700px; height: 200px;
+       position: fixed;
+   }
+   .left_mid_pictur{
+       width: 70px;
+       height: 90px;
+       border:solid 5px rgb(82, 79, 79);
+       position: fixed;
+       left: 14.7%;
+       top: 150px;
+   }
+   .left_mid_name_1{
+       font-family:华文行楷;
+       font-size: 42px;
+       font-weight: 300px;
+       color:black ;
+       text-decoration: none;
+       position: fixed;
+       left: 21%;
+       top: 150px;
+   }
+   .left_mid_name_2{
+       font-family:Georgia, 'Times New Roman', Times, serif;
+       font-size: 32px;
+       font-weight: 300px;
+       color:black ;
+       text-decoration: none;
+       position: fixed;
+       left: 21%;
+       top: 200px;
+   }
+   .left_down{
+       font-family: 华文行楷;
+       font-size: 22px;
+       position: fixed;
+       color: black;
+       left: 14.7%;
+       top: 270px;
+   }
+    #right{
+        margin: 0;
+        width: 55%;
+        height: 2800px;
+        float: left;
+        position: relative;
+        background: rgb(250, 246, 230);
+    }
+    .right_top{
+        width: 80%;
+        height: 150px;
+        position: relative;
+    }
+    .right_top_trip{
+      font-family: 华文行楷;
+      font-size: 58px;
+      position: absolute;
+      color: black;
+      top: 40px;
+    }
+    .right_top_line{
+        background: url(images/34.png);
+        width: 100px; height: 150px;
+       background-size: 90% 60%;
+       -moz-background-size:30% 100% ;
+       background-repeat: no-repeat;
+       position: absolute;
+       top:60px;
+       left:120px;
+    }
+    .right_top_line1{
+        background: url(images/34.png);
+        width: 100px; height: 150px;
+       background-size: 90% 60%;
+       -moz-background-size:30% 100% ;
+       background-repeat: no-repeat;
+       position: absolute;
+       top:60px;
+       left:200px;
+    }
+    .right_top_line2{
+        background: url(images/34.png);
+        width: 100px; height: 150px;
+       background-size: 90% 60%;
+       -moz-background-size:30% 100% ;
+       background-repeat: no-repeat;
+       position: absolute;
+       top:60px;
+       left:280px;
+    }
+    .right_mid_1{
+        width: 80%;
+        height: 630px;
+        position: relative;
+    }
+     p.right_mid_trip_shanghai{ 
+      font-family: 华文行楷;
+      font-size: 38px;
+      position: absolute;
+      color: black;
+      top: 20px;
+    }
+    .right_mid_1 a{
+       background: url(images/18.jpg);
+       background-size: 100% 100%;
+       width: 530px;
+       height: 530px;
+       position: absolute;
+       background-repeat: no-repeat;;
+       top: 80px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    .right_mid_2{
+        width: 80%;
+        height: 630px;
+        position: relative;
+    }
+    p.right_mid_trip_anhui{
+      font-family: 华文行楷;
+      font-size: 38px;
+      position: absolute;
+      color: black;
+      top: 20px;
+    }
+    .right_mid_2 a{
+       background: url(images/19.jpeg);
+       background-size: 100% 100%;
+       width: 530px;
+       height: 530px;
+       position: absolute;
+       background-repeat: no-repeat;;
+       top: 80px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    .right_mid_3{
+        width: 80%;
+        height: 680px;
+        position: relative;
+    }
+    p.right_mid_trip_tianjin{
+      font-family: 华文行楷;
+      font-size: 38px;
+      position: absolute;
+      color: black;
+      top: 20px;
+    }
+    .right_mid_3 a{
+       background: url(images/20.jpg);
+       background-size: 100% 100%;
+       width: 530px;
+       height: 580px;
+       position: absolute;
+       background-repeat: no-repeat;;
+       top: 80px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    .right_mid_4{
+        width: 80%;
+        height: 680px;
+        position: relative;
+    }
+    p.right_mid_trip_beijing{
+      font-family: 华文行楷;
+      font-size: 38px;
+      position: absolute;
+      color: black;
+      top: 20px;
+    }
+    .right_mid_4 a{
+       background: url(images/21.jpeg);
+       background-size: 100% 100%;
+       width: 530px;
+       height: 580px;
+       position: absolute;
+       background-repeat: no-repeat;;
+       top: 80px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    .right_mid_5{
+        width: 80%;
+        height: 680px;
+        position: relative;
+    }
+    p.right_mid_trip_pingyao{
+      font-family: 华文行楷;
+      font-size: 38px;
+      position: absolute;
+      color: black;
+      top: 20px;
+    }
+    .right_mid_5 a{
+       background: url(images/35.jpg);
+       background-size: 100% 100%;
+       width: 530px;
+       height: 580px;
+       position: absolute;
+       background-repeat: no-repeat;;
+       top: 80px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    .right_mid_6{
+        width: 80%;
+        height: 680px;
+        position: relative;
+    }
+    p.right_mid_trip_qinhuangdao{
+      font-family: 华文行楷;
+      font-size: 38px;
+      position: absolute;
+      color: black;
+      top: 20px;
+    }
+    .right_mid_6 a{
+       background: url(images/37.jpg);
+       background-size: 100% 100%;
+       width: 530px;
+       height: 580px;
+       position: absolute;
+       background-repeat: no-repeat;;
+       top: 80px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    .right_mid_7{
+        width: 80%;
+        height: 680px;
+        position: relative;
+    }
+    p.right_mid_trip_jinan{
+      font-family: 华文行楷;
+      font-size: 38px;
+      position: absolute;
+      color: black;
+      top: 20px;
+    }
+    .right_mid_7 a{
+       background: url(images/36.jpg);
+       background-size: 100% 100%;
+       width: 530px;
+       height: 580px;
+       position: absolute;
+       background-repeat: no-repeat;;
+       top: 80px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    </style>
+</head>
+<body>
+  <div id="all">
+    <div id="left">
+        <div class="left_mid">
+            <div class="left_top">
+                        <a class="pan" href="home.html">PAN</a>
+                <img class="left_mid_pictur" src="images/17.jpg">
+                <a class="left_mid_name_1" href="home.html">潘&nbsp;娇&nbsp;娇</a>
+                <a class="left_mid_name_2" href="home.html">PAN&nbsp;JIAO&nbsp;JIAO</a>
+                <p class="left_down">
+                     人生就是一段走走停停的旅程</br>
+                     愿我们遍历山河</br>
+                     觉得人间值得
+                </p>
+            </div>
+         </div>
+    </div>
+    <div id="right">
+          <div class="right_top">
+              <p class="right_top_trip">旅行</p>
+              <p class="right_top_line"></p>
+              <p class="right_top_line1"></p>
+              <p class="right_top_line2"></p>
+          </div>
+          <div class="right_mid_1">
+              <p class="right_mid_trip_shanghai">走走停停第一站：上海</p>
+              <a ></a>
+
+          </div>
+          <div class="right_mid_2">
+                <p class="right_mid_trip_anhui">走走停停第二站：安徽</p>
+                <a ></a>
+          </div>
+          <div class="right_mid_3">
+                <p class="right_mid_trip_tianjin">走走停停第三站：天津</p>
+                <a ></a>
+          </div>
+          <div class="right_mid_4">
+                <p class="right_mid_trip_beijing">走走停停第四站：北京</p>
+                <a ></a>
+          </div>
+          <div class="right_mid_5">
+                <p class="right_mid_trip_pingyao">走走停停第五站：平遥</p>
+                <a ></a>
+          </div>
+          <div class="right_mid_6">
+                <p class="right_mid_trip_qinhuangdao">走走停停第六站：秦皇岛</p>
+                <a ></a>
+          </div>
+          <div class="right_mid_7">
+                <p class="right_mid_trip_jinan">走走停停第七站：济南</p>
+                <a ></a>
+          </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto; padding: 0;
+            background: rgb(225, 238, 234);
+        }
+    #left{
+        width: 40%;
+        height: 900px;
+        margin:auto;
+        float: left;
+        position: relative;
+
+    }
+    .left_top{
+        width: 700px;height: 100px;
+       background: url(images/6.png);
+       background-size: 20% 70%;
+       -moz-background-size:30% 80% ;
+       position: fixed;
+       left:16%;
+       top: 40px;
+       background-repeat: no-repeat;
+    }
+    a.pan{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 42px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:5%;
+        top:11px;
+        text-decoration: none;
+   }
+   .left_mid{
+       width: 700px; height: 200px;
+   }
+   .left_mid_pictur{
+       width: 70px;
+       height: 90px;
+       border:solid 5px rgb(82, 79, 79);
+       position: absolute;
+       left: 4%;
+       top: 100px;
+   }
+   .left_mid_name_1{
+       font-family:华文行楷;
+       font-size: 42px;
+       font-weight: 300px;
+       color:black ;
+       text-decoration: none;
+       position: absolute;
+       left: 20%;
+       top: 100px;
+   }
+   .left_mid_name_2{
+       font-family:Georgia, 'Times New Roman', Times, serif;
+       font-size: 32px;
+       font-weight: 300px;
+       color:black ;
+       text-decoration: none;
+       position: absolute;
+       left: 20%;
+       top: 160px;
+   }
+   .left_down{
+       font-family: 华文行楷;
+       font-size: 22px;
+       position: absolute;
+       color: black;
+       left: 4%;
+       top: 230px;
+   }
+    #right{
+        margin: 0;
+        width: 60%;
+        height: 900px;
+        float: left;
+        position: relative;
+        background: rgb(250, 246, 230);
+    }
+    .right_top{
+        width:100%;
+        height: 210px;
+        position: relative;
+    }
+    .right_top_picture{
+        background: url(images/21.jpg);
+       background-size: 100% 100%;
+       width: 110px;
+       height: 150px;
+       position: absolute;
+       background-repeat: no-repeat;
+       top: 40px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    p.right_top_name{
+        font-family: 华文行楷;
+        font-size: 36px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:130px;
+        top:40px;
+        text-decoration: none;
+    }
+    p.right_top_author{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:85px;
+        text-decoration: none;
+    }
+    p.right_top_sentence{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:120px;
+        text-decoration: none;
+    }
+    .right_mid{
+        width: 100%;
+        height: 180px;
+    }
+    .right_mid_picture{
+        background: url(images/27.png);
+       background-size: 100% 100%;
+       width: 110px;
+       height: 150px;
+       position: absolute;
+       background-repeat: no-repeat;
+       top: 220px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    p.right_mid_name{
+        font-family: 华文行楷;
+        font-size: 36px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:130px;
+        top:220px;
+        text-decoration: none;
+    }
+    p.right_mid_author{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:265px;
+        text-decoration: none;
+    }
+    p.right_mid_sentence{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:300px;
+        text-decoration: none;
+    }
+    .right_bottom{
+        width: 100%;
+        height: 180px;
+    }
+    .right_bottom_picture{
+        background: url(images/23.jpg);
+       background-size: 100% 100%;
+       width: 110px;
+       height: 150px;
+       position: absolute;
+       background-repeat: no-repeat;
+       top: 400px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    p.right_bottom_name{
+        font-family: 华文行楷;
+        font-size: 36px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:130px;
+        top:400px;
+        text-decoration: none;
+    }
+    p.right_bottom_author{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:445px;
+        text-decoration: none;
+    }
+    p.right_bottom_sentence{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:480px;
+        text-decoration: none;
+    }
+    .right_down{
+        width: 100%;
+        height: 180px;
+    }
+    .right_down_picture{
+        background: url(images/33.jpg);
+       background-size: 100% 100%;
+       width: 110px;
+       height: 150px;
+       position: absolute;
+       background-repeat: no-repeat;
+       top: 580px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    p.right_down_name{
+        font-family: 华文行楷;
+        font-size: 36px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:130px;
+        top:580px;
+        text-decoration: none;
+    }
+    p.right_down_author{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:625px;
+        text-decoration: none;
+    }
+    p.right_down_sentence{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:665px;
+        text-decoration: none;
+    }
+    .right_last{
+        width: 100%;
+        height: 180px;
+    }
+    .right_last_picture{
+        background: url(images/26.jpg);
+       background-size: 100% 100%;
+       width: 110px;
+       height: 150px;
+       position: absolute;
+       background-repeat: no-repeat;
+       top: 760px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    p.right_last_name{
+        font-family: 华文行楷;
+        font-size: 36px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:130px;
+        top:760px;
+        text-decoration: none;
+    }
+    p.right_last_author{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:805px;
+        text-decoration: none;
+    }
+    p.right_last_sentence{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:845px;
+        text-decoration: none;
+    }
+    .right_last_1{
+        width: 100%;
+        height: 180px;
+    }
+    .right_last_1_picture{
+        background: url(images/29.jpg);
+       background-size: 100% 100%;
+       width: 110px;
+       height: 150px;
+       position: absolute;
+       background-repeat: no-repeat;
+       top: 940px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    p.right_last_1_name{
+        font-family: 华文行楷;
+        font-size: 36px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:130px;
+        top:940px;
+        text-decoration: none;
+    }
+    p.right_last_1_author{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:985px;
+        text-decoration: none;
+    }
+    p.right_last_1_sentence{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:1025px;
+        text-decoration: none;
+    }
+    .right_last_2{
+        width: 100%;
+        height: 180px;
+    }
+    .right_last_2_picture{
+        background: url(images/30.jpg);
+       background-size: 100% 100%;
+       width: 110px;
+       height: 150px;
+       position: absolute;
+       background-repeat: no-repeat;
+       top: 1120px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    p.right_last_2_name{
+        font-family: 华文行楷;
+        font-size: 36px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:130px;
+        top:1120px;
+        text-decoration: none;
+    }
+    p.right_last_2_author{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:1165px;
+        text-decoration: none;
+    }
+    p.right_last_2_sentence{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:1205px;
+        text-decoration: none;
+    }
+    .right_last_3{
+        width: 100%;
+        height: 180px;
+    }
+    .right_last_3_picture{
+        background: url(images/22.jpg);
+       background-size: 100% 100%;
+       width: 110px;
+       height: 150px;
+       position: absolute;
+       background-repeat: no-repeat;
+       top: 1300px;
+       cursor:hand;
+       border:solid 8px rgb(82, 79, 79);
+    }
+    p.right_last_3_name{
+        font-family: 华文行楷;
+        font-size: 36px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left:130px;
+        top:1300px;
+        text-decoration: none;
+    }
+    p.right_last_3_author{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:1345px;
+        text-decoration: none;
+    }
+    p.right_last_3_sentence{
+        font-family: 华文行楷;
+        font-size: 24px;
+        position: absolute;
+        left:150px;
+        top:1385px;
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+        <div id="left">
+                <div class="left_mid">
+                     <div class="left_top">
+                                <a class="pan" href="home.html">PAN</a>
+                        <img class="left_mid_pictur" src="images/17.jpg">
+                        <a class="left_mid_name_1" href="home.html">潘&nbsp;娇&nbsp;娇</a>
+                        <a class="left_mid_name_2" href="home.html">PAN&nbsp;JIAO&nbsp;JIAO</a>
+                        <p class="left_down">
+                             最喜无风无雨的夜晚</br>
+                             静品自然 静通心意</br>
+                             静享人世的浮华</br>
+                             也喜风急雨骤时 怀抱一书</br>
+                             静坐</br>
+                             观自然的风雨变换</br>
+                             悟人生的诡秘莫测</br>
+                        </p>
+                    </div>
+                 </div>
+        </div>
+        <div id="right">
+            <div class="right_top">
+                  <div class="right_top_picture"></div>
+                  <p class="right_top_name">《浮生物语》</p>
+                  <p class="right_top_author">作者：裟椤双树</p>
+                  <p class="right_top_sentence">
+                      经典语录：没有爱的人，身边纵然热闹蜂拥，终是寂寞不去；</br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有爱的人，天涯浪迹，穿风踏雪，却从不曾孤独。
+                  </p>
+            </div>
+            <div class="right_mid">
+                    <div class="right_mid_picture"></div>
+                    <p class="right_mid_name">《白夜行》</p>
+                    <p class="right_mid_author">作者：东野圭吾</p>
+                    <p class="right_mid_sentence">
+                        经典语录：你知道白夜吗？</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;明明是夜晚却有太阳，照得夜晚像白昼一样明亮</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;照得夜晚像白昼一样明亮，就是说一直这么犹豫不前的话，人生就毁了。
+                    </p>
+            </div>
+            <div class="right_bottom">
+                    <div class="right_bottom_picture"></div>
+                    <p class="right_bottom_name">《悟空传》</p>
+                    <p class="right_bottom_author">作者：郭子健</p>
+                    <p class="right_bottom_sentence">
+                        经典语录：也许每个人出生的时候都以为这世界都是为他一个人而存在的，</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当他发现自己错的时候，他便开始长大。
+                    </p>
+            </div>
+            <div class="right_down">
+                    <div class="right_down_picture"></div>
+                    <p class="right_down_name">《我当道士那些年》</p>
+                    <p class="right_down_author">作者：仐三</p>
+                    <p class="right_down_sentence">
+                        经典语录：三娃儿，有些事不要只看眼前，一条路总是有人陪伴，</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有人离开，但也许在下一个路口，离开的人就在那里等你。
+                    </p>
+            </div>
+            <div class="right_last">
+                    <div class="right_last_picture"></div>
+                    <p class="right_last_name">《活着》</p>
+                    <p class="right_last_author">作者：余华</p>
+                    <p class="right_last_sentence">
+                        经典语录：人是为活着本身而活着的，</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;而不是为活着之外的任何事物所活着。
+                    </p>
+            </div>
+            <div class="right_last_1">
+                    <div class="right_last_1_picture"></div>
+                    <p class="right_last_1_name">《野火集》</p>
+                    <p class="right_last_1_author">作者：龙应台</p>
+                    <p class="right_last_1_sentence">
+                        经典语录：我的人生里没有那么多时间与精力去</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;揣测别人对我的看法与评价；该做的事太多了。
+                    </p>
+            </div>
+            <div class="right_last_2">
+                    <div class="right_last_2_picture"></div>
+                    <p class="right_last_2_name">《三体》</p>
+                    <p class="right_last_2_author">作者：刘慈欣</p>
+                    <p class="right_last_2_sentence">
+                        经典语录：记忆是一条早已干涸的河流，</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只在毫无生气的河床中剩下零落的砾石。
+                    </p>
+            </div>
+            <div class="right_last_3">
+                    <div class="right_last_3_picture"></div>
+                    <p class="right_last_3_name">《哑舍》</p>
+                    <p class="right_last_3_author">作者：玄色</p>
+                    <p class="right_last_3_sentence">
+                        经典语录：平坦的路好走，</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但泥泞的路上才能留下脚印。
+                    </p>
+            </div>
+        </div>
+</body>
+</html>
